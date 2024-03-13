@@ -12,8 +12,8 @@ const robot = require('robotjs');
 			robot.keyTap('audio_vol_up');
 		}else if( hexs.startsWith('0838ff')){	// CCW
 			robot.keyTap('audio_vol_down');
-		}else if( hexs.startsWith(080100) ){	// click on dial
-			robot.keyTap('audio_pause');
+		}else if( hexs.startsWith('080100') ){	// click on dial
+			robot.keyTap('3', ['command','shift']);
 		}
 		//robot.scrollMouse(0,10);
 	});
